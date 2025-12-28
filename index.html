@@ -6,6 +6,44 @@
   <title>Jawahar Bharanitharan | Portfolio</title>
 
   <style>
+    html {
+  scroll-behavior: smooth;
+}
+
+    /* NAVIGATION BAR */
+nav {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: #020617;
+  border-bottom: 1px solid #1e293b;
+}
+
+.nav-container {
+  max-width: 1000px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 20px;
+}
+
+.nav-logo {
+  font-weight: bold;
+  font-size: 1.1rem;
+  color: #7dd3fc;
+}
+
+.nav-links a {
+  margin-left: 20px;
+  font-size: 0.95rem;
+  color: #e5e7eb;
+}
+
+.nav-links a:hover {
+  color: #38bdf8;
+}
+
     body {
       margin: 0;
       font-family: Arial, Helvetica, sans-serif;
@@ -91,6 +129,19 @@
 </head>
 
 <body>
+  <nav>
+  <div class="nav-container">
+    <div class="nav-logo">Jawahar Bharanitharan</div>
+    <div class="nav-links">
+      <a href="#about">About</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </div>
+</nav>
+
 
   <!-- HERO -->
   <header>
@@ -103,7 +154,7 @@
   </header>
 
   <!-- ABOUT -->
-  <section>
+  <section id="about">
     <h2>About Me</h2>
     <p>
       I am an Engineer at Renault Nissan Technology Business Centre India (RNTBCI)
@@ -115,7 +166,7 @@
   </section>
 
   <!-- EXPERIENCE -->
-  <section>
+  <section id="experience">
     <h2>Experience</h2>
 
     <div class="card">
@@ -150,7 +201,7 @@
   </section>
 
   <!-- PROJECTS -->
-  <section>
+  <section id="projects">
     <h2>Key Projects</h2>
 
     <div class="card">
@@ -188,7 +239,7 @@
   </section>
 
   <!-- SKILLS -->
-  <section>
+  <section id="skills">
     <h2>Skills</h2>
     <div class="skills">
       <span>Python</span>
@@ -216,7 +267,7 @@
   </section>
 
   <!-- CONTACT -->
-  <section>
+  <section id="contact">
     <h2>Contact</h2>
     <div class="contact">
       <a href="mailto:bjawahar10@gmail.com">Email</a>
@@ -225,7 +276,7 @@
   </section>
 
   <footer>
-    © 2025 Jawahar Bharanitharan
+    © 2026 Jawahar Bharanitharan
   </footer>
 
 </body>
