@@ -1,1 +1,283 @@
 
+/* =========================
+   GLOBAL RESET & BASE
+========================= */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Segoe UI", Roboto, Arial, sans-serif;
+  background-color: #020617;
+  color: #e5e7eb;
+  line-height: 1.6;
+}
+
+/* =========================
+   NAVBAR
+========================= */
+
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: #020617;
+  border-bottom: 1px solid #1e293b;
+  padding: 16px 40px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: 700;
+  color: #38bdf8;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #e5e7eb;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.nav-links a:hover {
+  color: #38bdf8;
+}
+
+.resume-btn {
+  background-color: #38bdf8;
+  color: #020617 !important;
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-weight: 600;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.resume-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(56, 189, 248, 0.3);
+}
+
+/* =========================
+   HERO SECTION
+========================= */
+
+.hero {
+  padding: 120px 40px 100px;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 48px;
+  font-weight: 800;
+  color: #38bdf8;
+}
+
+.hero h2 {
+  margin-top: 12px;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.hero p {
+  margin: 24px auto;
+  max-width: 650px;
+  color: #94a3b8;
+}
+
+.cta {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 28px;
+  background-color: #38bdf8;
+  color: #020617;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 8px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.cta:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 22px rgba(56, 189, 248, 0.35);
+}
+
+/* =========================
+   SECTIONS
+========================= */
+
+.section {
+  padding: 80px 40px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.section-title {
+  font-size: 32px;
+  margin-bottom: 24px;
+  color: #38bdf8;
+  text-align: center;
+}
+
+.section-text {
+  text-align: center;
+  max-width: 800px;
+  margin: auto;
+  color: #cbd5f5;
+}
+
+/* =========================
+   SKILLS
+========================= */
+
+.skills-grid {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.skill-card {
+  background-color: #020617;
+  border: 1px solid #1e293b;
+  padding: 16px;
+  text-align: center;
+  border-radius: 10px;
+  font-weight: 600;
+  transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.skill-card:hover {
+  transform: translateY(-5px);
+  border-color: #38bdf8;
+}
+
+/* =========================
+   EXPERIENCE
+========================= */
+
+.experience-card {
+  margin-top: 40px;
+  background-color: #020617;
+  border: 1px solid #1e293b;
+  padding: 30px;
+  border-radius: 12px;
+}
+
+.experience-card h3 {
+  color: #e5e7eb;
+  font-size: 22px;
+}
+
+.experience-card span {
+  color: #94a3b8;
+  font-size: 14px;
+}
+
+.duration {
+  margin: 8px 0 16px;
+  color: #64748b;
+}
+
+.experience-card ul {
+  padding-left: 20px;
+}
+
+.experience-card li {
+  margin-bottom: 12px;
+}
+
+/* =========================
+   PROJECTS
+========================= */
+
+.projects-grid {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+}
+
+.project-card {
+  background-color: #020617;
+  border: 1px solid #1e293b;
+  padding: 24px;
+  border-radius: 12px;
+  transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.project-card h3 {
+  color: #38bdf8;
+  margin-bottom: 10px;
+}
+
+.project-card:hover {
+  transform: translateY(-6px);
+  border-color: #38bdf8;
+}
+
+/* =========================
+   CONTACT
+========================= */
+
+#contact a {
+  color: #38bdf8;
+  text-decoration: none;
+}
+
+#contact a:hover {
+  text-decoration: underline;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+.footer {
+  border-top: 1px solid #1e293b;
+  padding: 20px;
+  text-align: center;
+  color: #64748b;
+  font-size: 14px;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .nav-links {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .hero h1 {
+    font-size: 36px;
+  }
+
+  .hero h2 {
+    font-size: 20px;
+  }
+}
