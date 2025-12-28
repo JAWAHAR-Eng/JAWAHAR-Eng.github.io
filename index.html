@@ -18,7 +18,20 @@ nav {
   background-color: #020617;
   border-bottom: 1px solid #1e293b;
 }
+/* RESUME BUTTON */
+.resume-btn {
+  margin-left: 24px;
+  padding: 8px 14px;
+  border-radius: 6px;
+  background: #38bdf8;
+  color: #020617;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
 
+.resume-btn:hover {
+  background: #7dd3fc;
+}
 .nav-container {
   max-width: 1000px;
   margin: auto;
@@ -129,15 +142,22 @@ nav {
 </head>
 
 <body>
-  <nav>
+<nav>
   <div class="nav-container">
     <div class="nav-logo">Jawahar Bharanitharan</div>
+
     <div class="nav-links">
       <a href="#about">About</a>
       <a href="#experience">Experience</a>
       <a href="#projects">Projects</a>
       <a href="#skills">Skills</a>
       <a href="#contact">Contact</a>
+
+      <a href="Jawahar_Resume.pdf" 
+         class="resume-btn" 
+         target="_blank">
+        Download Resume
+      </a>
     </div>
   </div>
 </nav>
