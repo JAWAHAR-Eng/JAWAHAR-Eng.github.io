@@ -3,7 +3,13 @@
 
 // Wait for DOM to be fully loaded
 document.addEventListener('DOMContentLoaded', function() {
-    
+
+    // Footer year — auto-update so the copyright never goes stale
+    const footerYear = document.getElementById('footer-year');
+    if (footerYear) {
+        footerYear.textContent = new Date().getFullYear();
+    }
+
     // Mobile Navigation Toggle
     const navToggle = document.querySelector('.nav-toggle');
     const navMenu = document.querySelector('.nav-menu');
