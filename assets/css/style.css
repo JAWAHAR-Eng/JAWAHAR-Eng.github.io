@@ -1050,6 +1050,127 @@ section {
     line-height: 1.6;
 }
 
+/* Speaking & Outreach */
+.speaking-section {
+    margin-top: var(--spacing-xl);
+    padding-top: var(--spacing-xl);
+    border-top: 2px solid var(--color-border);
+}
+
+.speaking-item {
+    display: grid;
+    grid-template-columns: minmax(220px, 320px) 1fr;
+    gap: var(--spacing-lg);
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-left: 4px solid var(--color-primary);
+    border-radius: 8px;
+    padding: var(--spacing-md);
+    transition: var(--transition-base);
+}
+
+.speaking-item:hover {
+    border-color: var(--color-primary);
+    transform: translateY(-4px);
+}
+
+.speaking-media {
+    position: relative;
+    background: var(--color-bg-tertiary);
+    border-radius: 6px;
+    overflow: hidden;
+    align-self: start;
+}
+
+.speaking-media img {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+.speaking-content {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.speaking-role {
+    font-family: var(--font-mono);
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--color-accent);
+}
+
+.speaking-title {
+    font-size: 1.35rem;
+    color: var(--color-text);
+    margin: 0;
+}
+
+.speaking-venue {
+    color: var(--color-primary);
+    font-weight: 500;
+    margin: 0;
+}
+
+.speaking-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    font-size: 0.9rem;
+    color: var(--color-text-muted);
+    margin: 0;
+}
+
+.speaking-dot {
+    opacity: 0.5;
+}
+
+.speaking-desc {
+    color: var(--color-text-secondary);
+    line-height: 1.6;
+    margin: 0.25rem 0 0;
+}
+
+.speaking-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    margin-top: 0.5rem;
+    padding: 0.5rem 0.9rem;
+    align-self: flex-start;
+    font-family: var(--font-mono);
+    font-size: 0.85rem;
+    color: var(--color-primary);
+    background: rgba(0, 229, 255, 0.08);
+    border: 1px solid var(--color-primary);
+    border-radius: 4px;
+    text-decoration: none;
+    transition: var(--transition-base);
+}
+
+.speaking-link:hover {
+    background: rgba(0, 229, 255, 0.18);
+    transform: translateX(2px);
+}
+
+.speaking-link-icon {
+    width: 14px;
+    height: 14px;
+}
+
+@media (max-width: 768px) {
+    .speaking-item {
+        grid-template-columns: 1fr;
+    }
+
+    .speaking-media {
+        max-width: 380px;
+    }
+}
+
 /* Leadership Section */
 .leadership-section {
     margin-top: var(--spacing-xl);
